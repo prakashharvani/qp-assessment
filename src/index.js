@@ -33,6 +33,9 @@ const sequelize = new Sequelize({
     console.log('Database and tables created!');
   });
 
+  const api = express.Router().use().use()
+  app.use('/api',api);
+  
   app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
   });
